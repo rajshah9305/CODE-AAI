@@ -190,4 +190,25 @@ module.exports = {
           },
         },
         '.scrollbar-default': {
-          '-ms-overflow-style
+          '-ms-overflow-style': 'auto',
+          'scrollbar-width': 'auto',
+          '&::-webkit-scrollbar': {
+            display: 'block',
+          },
+        },
+        '.glass': {
+          'background': 'rgba(255, 255, 255, 0.1)',
+          'backdrop-filter': 'blur(10px)',
+          'border': '1px solid rgba(255, 255, 255, 0.2)',
+        },
+        '.text-gradient': {
+          'background': 'linear-gradient(45deg, #3b82f6, #8b5cf6)',
+          '-webkit-background-clip': 'text',
+          '-webkit-text-fill-color': 'transparent',
+          'background-clip': 'text',
+        },
+      };
+      addUtilities(newUtilities);
+    },
+  ],
+};
